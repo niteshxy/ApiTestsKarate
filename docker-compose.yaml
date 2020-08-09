@@ -6,4 +6,4 @@ services:
     command: sh -c 'mvn dependency:go-offline && mvn package'
     volumes:
       - .:/usr/src/app
-    working_dir: /usr/src/appdocdocker-compose run api-test
+    working_dir: /usr/src/app
