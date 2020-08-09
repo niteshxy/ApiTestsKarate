@@ -2,7 +2,7 @@
 
   Background:
     * url baseUrl
-    * def users = call read('./users.feature')
+    * def users = call read('../users/users.feature')
     * def userResponse = users.response
 
   Scenario: Get all the posts by user with username Delphine by using their user id
@@ -13,7 +13,6 @@
     Then status 200
     * def fun = function(x){ return { id: x.id } }
     * def postIds = karate.map(response, fun)
-    * print 'ids->>>>', postIds
 
 
   
