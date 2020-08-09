@@ -38,3 +38,7 @@ Following test scenarios have been implemented
 
 ## Framework Details
 These tests are implemented in [karate](https://github.com/intuit/karate) framework. The tests are present in `.feature` files which are in the respective directories in  src/test/java/examples directory. The test follow the gherkin format which is supported by karate framework. All the implementation to run the scenarios in `.feature`  files is provided by karate. 
+
+## Continous Integration
+
+This project is configured for continous integration using Circle CI. The circle CI settings are configured in `.circleci/config.yml` file. So whenever a change is commited to this repository then the build is triggered on Circle CI which is linked to this repository.
