@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  api-tests:
+    image: "circleci/openjdk:8-jdk-stretch"
+    command: sh -c 'mvn dependency:go-offline && mvn package'
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/appdocdocker-compose run api-test
